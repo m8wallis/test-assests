@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <style>
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tile-ctas {
+    position: relative;
+    margin-bottom: 1.25rem;
+  }
+
+  .tile-ctas h3, .tile-ctas h4, .tile-ctas h5 {
+    font-family: 'Oswald', Arial, sans-serif;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 1.125;
+    text-transform: uppercase;
+    font-size: 4.75vw;
+    letter-spacing: 1.5px;
+    color: #fff;
+  }
+
+  .tile-ctas h4 {
+    font-size: 4vw;
+  }
+
+  .tile-ctas h5 {
+    font-size: 3.25vw;
+    color: #484949;
+  }
+
+  .tile-ctas p {
+    color: #fff;
+  }
+
+
+/* Header Hero Section START */  
+/*header {
+    top: -350px;
+    position: relative;
+    z-index: 1000;
+}*/
+
+header .hero-bg {
+  background:url(https://raw.githubusercontent.com/m8wallis/test-assests/master/img/ucsd-hero-v1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header h2 {
+    font-family: 'Oswald', Arial, sans-serif;
+   /* position: absolute;
+    left: 0;
+    width: 100%;*/
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 7rem;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+header h2:first-child {
+  padding-top: 2rem;
+}
+
+header h2:nth-child(2) {
+  margin: 0 0 4% 6%;
+}
+
+header p {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin: 3% 0 4% 6%;
+  letter-spacing: 1.125px;
+}
+
+header p a {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: underline;
+}
+
+a.cta-button {
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem 4rem;
+    color: #484949;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-color: #ffcd00;
+    text-align: center;
+  }
+
+.header-buttons a.cta-button {
+    margin: 0 0 4% 6%;
+  }
+
+  .header-buttons a:nth-child(2).cta-button {
+    margin: 0 0 4% 2.5%;
+  }
+/* Header Hero Section START */  
+
+
+/*  Full Width Info Blocks and CTAs START  */
+
+  div[class$="admin"] h3 {
+    color: #fff;
+    top: 22.5%;
+    margin: 0 auto;
+  }
+
+  div[class$="block"] > * {
+    position: absolute;
+  }
+
+  div[class$="block"] img {
+    min-height: 125px;
+    position: relative;
+  }
+
+  div[class$="block"] ul {
+    top: 52.5%;
+    display: inline-flex;
+    list-style: none;
+    padding: 2rem 0;
+  }
+
+  div[class$="block"] ul li {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+
+ /*  Full Width Info Blocks and CTAs END */ 
+
+
+ /* Academic Block Section START */
+
+  .academic-block div:first-child {
+    background-image: url(https://raw.githubusercontent.com/m8wallis/test-assests/master/img/academic-block-v2.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 308px;
+  }
+
+  /*.academic-block div .col-xs-12 {
+    position: absolute;
+  }*/
+
+  .academic-block h4 {
+    text-align: left;
+    top: 15%;
+    margin-left: 6%;
+    position: absolute;
+  }
+
+  .academic-block a.cta-button {
+    margin: 0 0 4% 6%;
+    position: absolute;
+  }
+
+  .academic-block p {
+    width: 50%;
+    left: 6%;
+    top: 40%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    position: absolute;
+    padding-left: 0;
+  }
+
+/* Academic Block Section END */  
+
+
+/* Financial Block Section START */
+
+  .financial-block div:first-child {
+    background-image: url(https://raw.githubusercontent.com/m8wallis/test-assests/master/img/financial-block-v2.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 308px;
+  }
+
+  .financial-block h4 {
+    text-align: right;
+    top: 15%;
+    margin-left: -5.5%;
+    position: absolute;
+  }
+
+  .financial-block a.cta-button {
+    right: 0;
+    left: inherit;
+    margin: 0 6% 4% 0;
+    position: absolute;
+  }
+
+  .financial-block p {
+    width: 50%;
+    right: 6%;
+    top: 40%;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    position: absolute;
+    padding-right: 0;
+  }
+
+/* Financial Block Section END */
+
+/* Bottom Student & Counselor Blocks START*/
+
+  .student-admin h5, .counselor-admin h5 {
+    text-align: left;
+    color: #484949;
+    top: 17.5%;
+    left: 10%;
+  }
+
+  .student-admin a, .counselor-admin a {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: underline;
+    top: 65%;
+    left: 10%;
+  }
+
+  a.cta-button:hover {
+    color: #484949;
+    background-color: #fff;
+    border-color: transparent;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+/* Bottom END */
+
+
+  @media only screen and (min-width: 1200px) {
+    .tile-ctas h3 {
+      font-size: 5.5rem;
+    }
+
+    .tile-ctas h4 {
+      font-size: 4.5rem;
+    }
+
+    .tile-ctas h5 {
+      font-size: 3.75rem;
+    }
+
+    .col-sm-6 img {
+      width: 96.5%!important;
+    }
+    .col-sm-12 img {
+      width: 98.25%!important;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .container {
+      max-width: 1025px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .tile-ctas {
+      margin-bottom: 2.75rem;
+    }
+
+    .col-lg-6 {
+      width: 50%;
+    }
+
+    header .hero-bg {
+      min-height: 350px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .tile-ctas h3 {
+      font-size: 3.5rem;
+    }
+
+    .tile-ctas h4 {
+      font-size: 2.75rem;
+    }
+
+    .tile-ctas h5 {
+      font-size: 2.25rem;
+    }
+
+    .academic-block a.cta-button {
+      font-size: 1.25rem;
+    }
+
+    .header-buttons a.cta-button {
+      font-size: 1.25rem;
+      padding: 1rem 3.5rem;
+    }
+
+    header .hero-bg {
+      background-position-x: 50%;
+    }
+
+
+    .academic-block div:first-child {
+      background-position-x: 80%;
+    }
+
+    header h2 {
+      font-size: 5rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 640px) {
+    .header-buttons a.cta-button {
+      display: block;
+    }
+
+    .col-small-12, .tile-ctas h4 {
+      width: 90%!important;
+    }
+
+    .tile-ctas h4 {
+      width: 90%!important;
+      top: 5%;
+    }
+
+    .academic-block p, .financial-block p {
+      top: 35%;
+    }
+
+    .header-buttons a.cta-button {
+      margin: 2.5%!important;
+    }
+
+    .financial-block h4 {
+      margin-left: 4%;
+    }
+
+    header h2 {
+      font-size: 4rem;
+    }
+
+     header h2:nth-child(2) {
+        margin: 0 0 5% 0;
+    }
+  }
+
+  </style>
+</head>
+<body>
+
+<!-- <div style="background:url('https://raw.githubusercontent.com/m8wallis/test-assests/master/img/ucsd-hero-v1.jpg'); width: 100%; height: 350px;"></div> -->
+<header>
+<div class="hero-bg">
+  <div class="row">
+    <div class="col-xs-10 col-xs-push-1">
+      <h2>A NATIONAL</h2>
+      <h2>TOP 10 UNIVERSITY</h2>
+      <div class="header-buttons">
+         <a href="http://admissions.ucsd.edu/tours/index.html" class="cta-button">Visit Campus</a>
+         <a href="http://admissions.ucsd.edu/next/ready.html" class="cta-button">Attend A Class</a>
+      </div>
+      <p>Check out some <a href="http://admissions.ucsd.edu/forms/index.html">upcoming events</a></p>
+    </div>
+  </div>
+</div>
+</header>
+  
+<div class="container text-center">
+<!-- Top Admissions Tile CTAs -->
+  <div class="row">
+    <div class="col-sm-6 tile-ctas freshman-admin">
+      <a href="http://admissions.ucsd.edu/freshmen/index.html"><img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/freshman-tile-v2.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <h3>Freshman<br/>Admissions</h3></a>
+    </div>
+    <div class="col-sm-6 tile-ctas transfer-admin">
+      <a href="http://admissions.ucsd.edu/transfers/index.html"><img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/transfer-tile-v2.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <h3>Transfer<br/>Admissions</h3></a>
+    </div>
+  </div>
+
+<!-- Academic Block CTAs -->  
+  <div class="row">
+    <div class="col-sm-12 tile-ctas academic-block">
+      <!-- <img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/academic-block-v2.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+      <div>
+        <h4>Academic Information</h4>
+        <a href="http://admissions.ucsd.edu/academics/index.html" class="cta-button">Explore</a>
+        <p class="col-small-12 col-lg-6">Work closely with brilliant faculty, engage in a field you are passionate about and begin shaping the academic journey you have always envisioned.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Financial Block CTAs -->  
+  <div class="row">
+    <div class="col-sm-12 tile-ctas financial-block">
+      <!-- <img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/financial-block-v2.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+      <div>
+         <h4>Costs & Financial Aid</h4>
+            <a href="http://admissions.ucsd.edu/finances/index.html" class="cta-button">Explore</a>
+            <p class="col-small-12 col-lg-6">We believe that every student, regardless of income, should be able to enroll, thrive and graduate. Follow these tips and tools to get started.</p>
+          </div>
+    </div>
+  </div>
+
+<!-- Button Student & Counselor Tile CTAs -->
+  <div class="row">
+    <div class="col-sm-6 tile-ctas student-admin">
+      <img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/bottom-student-cta-v2.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <h5>International<br/>Students</h5>
+        <a href="http://admissions.ucsd.edu/international/index.html">Learn More</a>
+    </div>
+    <div class="col-sm-6 tile-ctas counselor-admin">
+      <img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/bottom-counselor-cta-v2.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <h5>School<br/>Counselors</h5>
+      <a href="http://admissions.ucsd.edu/counselors/index.html">Learn More</a>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
