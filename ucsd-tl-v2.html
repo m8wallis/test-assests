@@ -66,6 +66,12 @@ header .hero-bg {
   background-size: cover;
 }
 
+header .hero-bg .row {
+  max-width: 1025px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 header h2 {
     font-family: 'Oswald', Arial, sans-serif;
    /* position: absolute;
@@ -116,7 +122,7 @@ a.cta-button {
     text-align: center;
   }
 
-.header-buttons a.cta-button {
+ .header-buttons a.cta-button {
     margin: 0 0 4% 6%;
   }
 
@@ -159,6 +165,10 @@ a.cta-button {
 
  /*  Full Width Info Blocks and CTAs END */ 
 
+.freshman-admin:hover, .transfer-admin:hover {
+      transition: all 0.3s;
+      opacity: 0.7; 
+ }
 
  /* Academic Block Section START */
 
@@ -169,6 +179,10 @@ a.cta-button {
     position: relative;
     min-height: 308px;
   }
+
+  .academic-block div:first-child div {
+      background-image: none; 
+    }
 
   /*.academic-block div .col-xs-12 {
     position: absolute;
@@ -211,6 +225,10 @@ a.cta-button {
     position: relative;
     min-height: 308px;
   }
+
+  .financial-block div:first-child div {
+      background-image: none; 
+    }
 
   .financial-block h4 {
     text-align: right;
@@ -287,12 +305,12 @@ a.cta-button {
       font-size: 3.75rem;
     }
 
-    /*.col-sm-6 img {
+    .col-sm-6 img {
       width: 96.5%!important;
     }
     .col-sm-12 {
       width: 98.25%!important;
-    }*/
+    }
   }
 
   @media only screen and (min-width: 992px) {
@@ -318,7 +336,7 @@ a.cta-button {
   @media only screen and (max-width: 767px) {
 
     .tile-ctas h3 {
-      font-size: 3.5rem;
+      font-size: 3.25rem;
     }
 
     .tile-ctas h4 {
@@ -351,6 +369,12 @@ a.cta-button {
       font-size: 5rem;
     }
 
+    div[class$="admin"] h3 {
+        top: 0;
+        margin: 0 auto;
+        padding: 15%;
+    }
+
   }
 
   @media only screen and (max-width: 640px) {
@@ -362,22 +386,30 @@ a.cta-button {
       width: 90%!important;
     }
 
+    .tile-ctas h3 {
+      font-size: 2.5rem;
+    }
+
     .tile-ctas h4 {
       width: 90%!important;
       top: 5%;
     }
 
     .academic-block p, .financial-block p {
-      top: 35%;
+      top: 30%;
+    }
+
+    .academic-block a.cta-button, .financial-block a.cta-button {
+      margin-bottom: 13%;
     }
 
     .header-buttons a.cta-button {
       margin: 2.5%!important;
     }
 
-    .financial-block h4 {
+  /*  .financial-block h4 {
       margin-left: 4%;
-    }
+    }*/
 
     header h2 {
       font-size: 4rem;
@@ -386,18 +418,55 @@ a.cta-button {
      header h2:nth-child(2) {
         margin: 0 0 5% 0;
     }
+
+    .financial-block div:first-child div {
+      background-image: none; 
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    .academic-block div:first-child div {
+      background-image: none; 
+      background-color: rgba(0,0,0,0.3);
+    }
+
+    .financial-block p {
+      left: 6%;
+      text-align: left;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.5;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      position: absolute;
+      padding-left: 0;
+    }
+
+    .financial-block h4 {
+        text-align: left;
+        margin-left: 6%;
+        position: absolute;
+    }
+
+    .financial-block a.cta-button {
+        margin: 0 0 13% 6%;
+        right: inherit;
+        left: 0;
+    }
+
+    header p {
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+    }
+
+    header h2 {
+      line-height: 1.1;
+    }
+
+    header h2:first-child {
+      margin-bottom: 0;
+    }
   }
 
   </style>
-  
-<script type='text/javascript'>
-(function (d, t) {
-  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
-  bh.type = 'text/javascript';
-  bh.src = 'https://www.bugherd.com/sidebarv2.js?apikey=nxj20yfkvhjzeexqn5ul4a';
-  s.parentNode.insertBefore(bh, s);
-  })(document, 'script');
-</script>
 </head>
 <body>
 
@@ -405,14 +474,14 @@ a.cta-button {
 <header>
 <div class="hero-bg">
   <div class="row">
-    <div class="col-xs-10 col-xs-push-1">
+    <div class="col-xs-12">
       <h2>A NATIONAL</h2>
       <h2>TOP 10 UNIVERSITY</h2>
       <div class="header-buttons">
          <a href="http://admissions.ucsd.edu/tours/index.html" class="cta-button">Visit Campus</a>
-         <a href="http://admissions.ucsd.edu/next/ready.html" class="cta-button">Attend A Class</a>
+         <a href="http://admissions.ucsd.edu/events/index.html" class="cta-button">Attend A Class</a>
       </div>
-      <p>Check out some <a href="http://admissions.ucsd.edu/forms/index.html">upcoming events</a></p>
+      <p>Check out some <a href="http://admissions.ucsd.edu/events/index.html" style="color:#fff;text-decoration: underline;">upcoming events</a></p>
     </div>
   </div>
 </div>
@@ -426,19 +495,22 @@ a.cta-button {
       <h3>Freshman<br/>Admissions</h3></a>
     </div>
     <div class="col-sm-6 tile-ctas transfer-admin">
-      <a href="http://admissions.ucsd.edu/transfers/index.html"><img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/transfer-tile-v2.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <a href="https://admissions.ucsd.edu/transfers/index.html"><img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/transfer-tile-v2.jpg" class="img-responsive" style="width:100%" alt="Image">
             <h3>Transfer<br/>Admissions</h3></a>
     </div>
   </div>
+
 
 <!-- Academic Block CTAs -->  
   <div class="row">
     <div class="col-sm-12 tile-ctas academic-block">
       <!-- <img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/academic-block-v2.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
       <div>
-        <h4>Academic Information</h4>
-        <a href="http://admissions.ucsd.edu/academics/index.html" class="cta-button">Explore</a>
-        <p class="col-small-12 col-lg-6">Work closely with brilliant faculty, engage in a field you are passionate about and begin shaping the academic journey you have always envisioned.</p>
+        <div>
+           <h4>Academic Information</h4>
+            <a href="http://admissions.ucsd.edu/academics/index.html" class="cta-button">Explore</a>
+            <p class="col-small-12 col-lg-6">Work closely with brilliant faculty, engage in a field you are passionate about and begin shaping the academic journey you have always envisioned.</p>
+          </div>
       </div>
     </div>
   </div>
@@ -448,10 +520,12 @@ a.cta-button {
     <div class="col-sm-12 tile-ctas financial-block">
       <!-- <img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/financial-block-v2.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
       <div>
-         <h4>Costs & Financial Aid</h4>
-            <a href="http://admissions.ucsd.edu/finances/index.html" class="cta-button">Explore</a>
-            <p class="col-small-12 col-lg-6">We believe that every student, regardless of income, should be able to enroll, thrive and graduate. Follow these tips and tools to get started.</p>
+          <div>
+             <h4>Costs & Financial Aid</h4>
+              <a href="http://admissions.ucsd.edu/finances/index.html" class="cta-button">Explore</a>
+              <p class="col-small-12 col-lg-6">We believe that every student, regardless of income, should be able to enroll, thrive and graduate. Follow these tips and tools to get started.</p>
           </div>
+      </div>
     </div>
   </div>
 
