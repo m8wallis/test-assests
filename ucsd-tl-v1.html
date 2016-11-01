@@ -66,6 +66,12 @@ header .hero-bg {
   background-size: cover;
 }
 
+header .hero-bg .row {
+  max-width: 1025px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 header h2 {
     font-family: 'Oswald', Arial, sans-serif;
    /* position: absolute;
@@ -147,7 +153,8 @@ a.cta-button {
     top: 52.5%;
     display: inline-flex;
     list-style: none;
-    padding: 2rem 0;
+    padding: 1.5rem;
+    margin-top: 2rem;
   }
 
   div[class$="block"] ul li {
@@ -158,6 +165,11 @@ a.cta-button {
   }
 
  /*  Full Width Info Blocks and CTAs END */ 
+
+ .freshman-admin:hover, .transfer-admin:hover {
+      transition: all 0.3s;
+      opacity: 0.7; 
+ }
 
 
  /* Academic Block Section START */
@@ -185,7 +197,7 @@ a.cta-button {
   .academic-block a.cta-button {
     bottom: 0;
     left: 0;
-    margin: 0 0 3% 6%;
+    margin: 0 0 4% 6%;
     padding: 1.25rem 4rem;
     color: #fff;
     letter-spacing: 2px;
@@ -245,7 +257,7 @@ a.cta-button {
     bottom: 0;
     right: 0;
     left: inherit;
-    margin: 0 6% 3% 0;
+    margin: 0 6% 4% 0;
     padding: 1.25rem 4rem;
     color: #fff;
     letter-spacing: 2px;
@@ -329,8 +341,8 @@ a.cta-button {
 
     /*.col-sm-6 img {
       width: 96.5%!important;
-    }
-    .col-sm-12 {
+    }*/
+    /*.col-sm-12 {
       width: 98.25%!important;
     }*/
   }
@@ -392,8 +404,23 @@ a.cta-button {
       font-size: 5rem;
     }
 
+    div[class$="admin"] h3 {
+        top: 0;
+        margin: 0 auto;
+        padding: 15%;
+    }
+
     .academic-block div:first-child, .financial-block div:first-child {
-      min-height: 350px;
+      min-height: 215px;
+    }
+
+    .academic-block div:first-child p, .financial-block div:first-child p {
+      width: 60%;
+    }
+
+    div[class$="block"] ul {
+        padding: 1.25rem;
+        margin-top: 2.5rem;
     }
 
   }
@@ -423,7 +450,7 @@ a.cta-button {
     }
 
     .academic-block p, .financial-block p {
-      top: 35%;
+      top: 30%;
     }
 
     .header-buttons a.cta-button {
@@ -446,15 +473,17 @@ a.cta-button {
         top: 50%;
         left: 0;
         display: block;
+        margin: 0 auto;
     }
 
     div[class$="block"] ul li {
         margin:0;
+        padding-top: 1rem;
     }
-
 
     .academic-block div:first-child, .financial-block div:first-child {
       text-align: center;
+      min-height: 400px;
     }
 
     .academic-block a.cta-button, .financial-block a.cta-button {
@@ -464,18 +493,22 @@ a.cta-button {
         padding: 1.25rem 4rem;
         width: 80%;
     }
+
+    header p {
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+    }
+
+    header h2 {
+      line-height: 1.1;
+    }
+
+    header h2:first-child {
+      margin-bottom: 0;
+    }
   }
 
   </style>
-  
-  <script type='text/javascript'>
-(function (d, t) {
-  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
-  bh.type = 'text/javascript';
-  bh.src = 'https://www.bugherd.com/sidebarv2.js?apikey=bfnaxnxwx0oiyexcki1akg';
-  s.parentNode.insertBefore(bh, s);
-  })(document, 'script');
-</script>
 </head>
 <body>
 
@@ -483,14 +516,14 @@ a.cta-button {
 <header>
 <div class="hero-bg">
   <div class="row">
-    <div class="col-xs-10 col-xs-push-1">
+    <div class="col-xs-12">
       <h2>A NATIONAL</h2>
       <h2>TOP 10 UNIVERSITY</h2>
       <div class="header-buttons">
          <a href="http://admissions.ucsd.edu/tours/index.html" class="cta-button">Visit Campus</a>
-         <a href="http://admissions.ucsd.edu/next/ready.html" class="cta-button">Attend A Class</a>
+         <a href="http://admissions.ucsd.edu/tours/ucsd-for-a-day.html" class="cta-button">Attend A Class</a>
       </div>
-      <p>Check out some <a href="http://admissions.ucsd.edu/forms/index.html">upcoming events</a></p>
+      <p>Check out some <a href="http://admissions.ucsd.edu/events/index.html">upcoming events</a></p>
     </div>
   </div>
 </div>
@@ -498,14 +531,15 @@ a.cta-button {
 
 <div class="container text-center">
 <!-- Top Admissions Tile CTAs -->
+
   <div class="row">
     <div class="col-sm-6 tile-ctas freshman-admin">
-      <img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/blue-cta-bg.jpg" class="img-responsive" style="width:100%" alt="Image">
-        <h3>Freshman<br/>Admissions</h3>
+      <a href="http://admissions.ucsd.edu/freshmen/index.html"><img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/blue-cta-bg.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <h3>Freshman<br/>Admissions</h3></a>
     </div>
     <div class="col-sm-6 tile-ctas transfer-admin">
-      <img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/blue-cta-bg.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <h3>Transfer<br/>Admissions</h3>
+      <a href="https://admissions.ucsd.edu/transfers/index.html"><img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/blue-cta-bg.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <h3>Transfer<br/>Admissions</h3></a>
     </div>
   </div>
 
@@ -517,8 +551,8 @@ a.cta-button {
             <a href="#" class="cta-button">Explore</a>
             <p class="col-small-12 col-lg-6">Work closely with brilliant faculty, engage in a field you are passionate about and begin shaping the academic journey you have always envisioned.</p>
             <ul class="col-small-12 col-lg-6">
-              <li><a href="#">Undergrad Majors</a></li>
-              <li><a href="#">Research</a></li>
+              <li><a href="http://ucsd.edu/academics.html">Undergrad Majors</a></li>
+              <li><a href="http://ucsd.edu/research-innovation/index.html">Research</a></li>
             </ul></div>
     </div>
   </div>
@@ -531,9 +565,9 @@ a.cta-button {
             <a href="#" class="cta-button">Explore</a>
             <p class="col-small-12 col-lg-6">We believe that every student, regardless of income, should be able to enroll, thrive and graduate. Follow these tips and tools to get started.</p>
             <ul class="col-small-12 col-lg-6">
-              <li><a href="#">Budget Estimates</a></li>
-              <li><a href="#">Financial Aid 101</a></li>
-              <li><a href="#">Timeline</a></li>
+              <li><a href="https://students.ucsd.edu/finances/financial-aid/budgeting/index.html">Budget Estimates</a></li>
+              <li><a href="https://students.ucsd.edu/finances/financial-aid/types/index.html">Financial Aid 101</a></li>
+              <li><a href="https://admissions.ucsd.edu/international/index.html">Timeline</a></li>
             </ul></div>
     </div>
   </div>
@@ -543,12 +577,12 @@ a.cta-button {
     <div class="col-sm-6 tile-ctas student-admin">
       <img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/student-globe-block.jpg" class="img-responsive" style="width:100%" alt="Image">
         <h5>International<br/>Students</h5>
-        <a href="#">Learn More</a>
+        <a href="https://admissions.ucsd.edu/international/index.html">Learn More</a>
     </div>
     <div class="col-sm-6 tile-ctas counselor-admin">
       <img src="https://raw.githubusercontent.com/m8wallis/test-assests/master/img/person-counselor-block.jpg" class="img-responsive" style="width:100%" alt="Image">
       <h5>School<br/>Counselors</h5>
-      <a href="#">Learn More</a>
+      <a href="https://admissions.ucsd.edu/counselors/index.html">Learn More</a>
     </div>
   </div>
 
